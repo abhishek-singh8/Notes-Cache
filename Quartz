@@ -1,0 +1,12 @@
+                                                            
+                                                                QUARTZ
+https://www.opencodez.com/java/quartz-scheduler-with-spring-boot.htm
+It is a job scheduling library. A job which needs to be scheduled at some particular time.
+
+Components of Quartz
+
+1) JOB             any task which needs to be performed.
+2) TRIGGER         A stored program which will be fired at a given time.
+                   1) Simple trigger - fired only once
+                   2) Cron trigger   - fired at every intervals
+3) SCHEDULER       Role of a scheduler is to schedule a job when a trigger is occured.

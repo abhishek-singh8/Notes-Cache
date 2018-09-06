@@ -1,0 +1,23 @@
+
+
+Thanks Anand for the quick introduction, Hi everyone this is Abhishek I will be presenting the architecture and demo of movie event creation service. 
+Before going to the architecture I will be showing the demo of how the organiser can create event for their movies.
+
+So this is the landing page of our platform in which a user has to first select the city in which they wants to create the event.
+ 
+Now this is the home page in which you can see the movies and other events which is already been created by some organiser.
+As we are providing single platform for both booking and creating events.User can directly book their events without logging but in order to 
+create any event user needs to register and login first.
+
+On this page the organiser has to fill all the details regarding the movie event.As you can see these are the theatres already been registered by this orgainser earlier.If they want to add more theatres they have the option to do so.Fill the names,city and the location.
+Once the theatre is created it will be reflected in the theatre
+ 
+So Any movie organiser or theatre owner who wants to create the event for their movie will input the details of their theatre and showTimings.
+The details as a json will come through the message bus to the ticket service. In ticket-service we are creating the shows based on timings given by the owners.The booking for all the shows will start together from the time  been created but question arises here how make the shows disabled whose time has passed. So here comes the role of the scheduler service,each shows that we have created in ticket-service will have its own date and time,based on that we are creating a job for each shows using quartz scheduler which will disable the show as soon as it ends.  
+
+ 
+Sumit Anand Live at That Comedy Club
+
+https://in.bmscdn.com/Events/moviecard/ET00081326.jpg?201809011201
+https://in.bmscdn.com/nmcms/media-desktop-sumit-anand-live-at-that-comedy-club-2018-8-10-t-14-30-0.jpeg
+--Stand Up | Hindi

@@ -48,7 +48,9 @@ CONTAINER
  sudo docker stats containerName
  sudo docker rm containerName
  sudo docker exec -it containerName bash (Go inside that container command line)
- docker cp charming_albattani:/usr/local/buildScripts/deployApp.sh  .
+ docker cp charming_albattani:/usr/local/buildScripts/deployApp.sh  .  [container to local]
+ 
+docker cp C:\Users\kh715e\Desktop\Workitems\DOCKER\Scripts\oapi\OapiApplication.properties charming_albattani:/usr/local/oapi/configs
  
 
 

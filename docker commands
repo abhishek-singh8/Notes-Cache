@@ -48,6 +48,8 @@ CONTAINER
  sudo docker stats containerName
  sudo docker rm containerName
  sudo docker exec -it containerName bash (Go inside that container command line)
+ docker cp charming_albattani:/usr/local/buildScripts/deployApp.sh  .
+ 
 
 
  SYSTEM
